@@ -1,5 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 html,body {
+    background: rgb(0, 0, 0);
+}
+h2 {
+    padding-top: 10px;
     font-family: 'Creepster', cursive;
-    background: rgb(218, 7, 7);
+}
+h2{
+    color: rgb(88, 246, 88);
+    font-size: 100px;
 }
