@@ -9,11 +9,12 @@ import { Charactere } from '../../../models/charactere/Charactere';
 })
 export class CharactereComponent implements OnInit {
 
+  characteres={} as Charactere;
   constructor(private service: CharactereService) {
     console.log("HOLA");
     this.service.getCharacters().subscribe((resp:Charactere)=>{
 
-      console.log(resp);
+      this.characteres=resp;
     });
     
    }
