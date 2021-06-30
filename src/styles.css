@@ -10,3 +10,13 @@ h2{
     color: rgb(88, 246, 88);
     font-size: 100px;
 }
+
+.card-text{
+margin-bottom: 0px !important;
+
+}
+
+span{
+    font-weight: bold;
+    
+    }
