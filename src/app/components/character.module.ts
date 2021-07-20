@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { CharacterRoutingModule } from './character-routing.module';
 import { CharactereComponent } from './charactere/charactere.component';
-
+import { InfiniteScrollModule } from "ngx-infinite-scroll";
 
 @NgModule({
   declarations: [
@@ -11,7 +11,8 @@ import { CharactereComponent } from './charactere/charactere.component';
   ],
   imports: [
     CommonModule,
-    CharacterRoutingModule
+    CharacterRoutingModule,
+    InfiniteScrollModule
   ]
 })
 export class CharacterModule { }

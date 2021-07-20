@@ -14,8 +14,8 @@ export class CharactereService {
   constructor(private http:HttpClient) { }
 
 
-  getCharacters(): Observable<Charactere>{
-    const url= `${this.uri}`;
+  getCharacters(page:number): Observable<Charactere>{
+    const url= `${this.uri}?page=${page}`;
     return this.http.get<Charactere>(url);
   }
 }

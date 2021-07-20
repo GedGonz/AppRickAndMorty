@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CharactereService } from '../../services/charactere.service';
 import { Charactere } from '../../../models/charactere/Charactere';
+import { Result } from 'src/models/charactere/Result';
 
 @Component({
   selector: 'app-charactere',
@@ -9,19 +10,27 @@ import { Charactere } from '../../../models/charactere/Charactere';
 })
 export class CharactereComponent implements OnInit {
 
-  characteres={} as Charactere;
+  page:number=1;
+  characteres:Result[]=[] ;
   constructor(private service: CharactereService) {
-    console.log("HOLA");
-    this.service.getCharacters().subscribe((resp:Charactere)=>{
 
-      this.characteres=resp;
-    });
     
    }
 
   ngOnInit(): void {
+    this.getCharacters();
     
-    
+  }
+
+  async getCharacters(){
+    let resp=await this.service.getCharacters(this.page).toPromise();
+    this.characteres.push(...resp.results);
+   
+  }
+  async onScroll(){
+    console.log("lo llama");
+    this.page=this.page+1;
+    await this.getCharacters();
   }
 
 }
