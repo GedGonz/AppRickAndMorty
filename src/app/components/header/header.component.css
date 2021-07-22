@@ -1,0 +1,12 @@
+.back{
+    margin-top: 60px;
+    margin-bottom: 50px;
+    width: 70%;
+    cursor: pointer;
+}
+.title{
+    font-family: 'Creepster';
+    color: #12b0c9 !important;
+    text-shadow: -1px -1px 0px #fcfcfc;
+    font-size: 40px;
+}

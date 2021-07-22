@@ -1,0 +1,25 @@
+.card{
+    background: #83c046 !important;
+    border: 1px solid rgb(131 192 70) !important;
+    box-shadow: 0 0 10px 1px #83c046 !important;
+}
+.card:hover{
+    box-shadow: 0 0 20px 1px #83c046 !important;
+}
+.card-title{
+    /* font-family: 'Creepster', cursive !important; */
+    color: #bddfb5 !important;
+ }
+ .card-text{
+     color: white !important;
+ }
+ .title{
+    font-family: 'Creepster';
+    color: #12b0c9 !important;
+    text-shadow: -1px -1px 0px #fcfcfc;
+    font-size: 40px;
+}
+.back{
+    
+    width: 70%;
+}

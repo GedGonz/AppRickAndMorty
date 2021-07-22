@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CharactereComponent } from './charactere/charactere.component';
+import { HomeComponent } from './home.component';
+import { CharactereComponent } from "./charactere/charactere.component";
 const routes: Routes = [
-  {path:'', component: CharactereComponent}
+  {path:'', component: HomeComponent},
+  {path:'all', component: CharactereComponent}
 ];
 
 @NgModule({

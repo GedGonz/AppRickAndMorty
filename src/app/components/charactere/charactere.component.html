@@ -1,4 +1,9 @@
-<h2 class="text-center m-t-10">Rik and Morty</h2>
+<div class="text-center">
+  <img class="back" src="assets/img/rick_morty.png">
+</div>
+<div class="text-center">
+  <p class="title" routerLink="/all">Sácales el dedo Morty, les dije que significa que hay paz entre los mundos</p>
+</div>
 <div  class="row" 
 infiniteScroll
 [infiniteScrollDistance]="2"
@@ -11,7 +16,7 @@ infiniteScroll
             <img [src]="item.image" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">{{item.name}}</h5>
-              <p class="card-text"><span>Species:</span>{{item.species}}</p>
+              <p class="card-text"><span>Species: </span>{{item.species}}</p>
 
             </div>
           </div>
