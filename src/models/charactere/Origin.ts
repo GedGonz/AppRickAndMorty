@@ -1,4 +1,4 @@
-export interface Origin{
-    name: string;
-    url: string;
+export class Origin{
+    name: string="";
+    url: string="";
 }

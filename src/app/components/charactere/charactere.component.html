@@ -12,7 +12,7 @@ infiniteScroll
 >
 
     <div class="col-md-3 mt-3"  *ngFor="let item of characteres">
-          <div class="card shadow" >
+          <div class="card shadow" routerLink="/detail/{{item.id}}">
             <img [src]="item.image" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">{{item.name}}</h5>

@@ -1,0 +1,31 @@
+<div class="row topCard">
+    <h3 class="text-center title">Detalle Personaje</h3>
+
+    <div class="col-md-12">
+        <div class="card shadow">
+            <div class="card-body">
+               
+               
+               <div class="row"> 
+                   <div class="col-md-6">
+                       <div class="text-center">
+                           <img class="avatar" src="{{resultCharacter.image}}" alt="">
+                       </div>
+                   </div>
+                   <div class="col-md-6 text-info">
+                       <p class="card-text">Nombre: {{resultCharacter.name}}</p>
+                       <p class="card-text">Estado: {{resultCharacter.status}}</p>
+                       <p class="card-text">Especie: {{resultCharacter.species}}</p>
+                       <p class="card-text">Tipo: {{resultCharacter.type}}</p>
+                       <p class="card-text">Origen: {{resultCharacter.origin.name}}</p>
+                       <p class="card-text">Locación: {{resultCharacter.location.name}}</p>
+                       
+                   </div>
+               </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<br>
+<p class="text-center return" routerLink="/all"> <- regresar</p>
