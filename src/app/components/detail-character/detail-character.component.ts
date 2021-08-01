@@ -17,11 +17,11 @@ export class DetailCharacterComponent implements OnInit {
               private rickService: CharactereService
               ) {
 
-                this.viewDetail();
+                
                }
 
   ngOnInit(): void {
-    
+    this.viewDetail();
   }
 
 
@@ -31,8 +31,8 @@ export class DetailCharacterComponent implements OnInit {
       
       if(param.id){
 
-        let resp=await this.rickService.getCharacter(param.id).toPromise();
-        this.resultCharacter=resp;
+        this.resultCharacter = await this.rickService.getCharacter(param.id).toPromise();
+
       }
     });
 

@@ -16,7 +16,7 @@
                        <p class="card-text">Nombre: {{resultCharacter.name}}</p>
                        <p class="card-text">Estado: {{resultCharacter.status}}</p>
                        <p class="card-text">Especie: {{resultCharacter.species}}</p>
-                       <p class="card-text">Tipo: {{resultCharacter.type}}</p>
+                       <p class="card-text" *ngIf="resultCharacter.type">Tipo: {{resultCharacter.type}}</p>
                        <p class="card-text">Origen: {{resultCharacter.origin.name}}</p>
                        <p class="card-text">Locación: {{resultCharacter.location.name}}</p>
                        

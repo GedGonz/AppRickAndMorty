@@ -11,6 +11,7 @@
 .card{
     background: #83c04600 !important;
     border: 1px solid rgb(131 192 70) !important;
+    box-shadow: 0 0 10px 1px #83c046 !important;
     padding: 20px;
 }
 
